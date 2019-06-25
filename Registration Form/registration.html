@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/registrationstyle.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+    <img src="images/logo2.png" class="logo">
+    <div class="main">
+        <div class="container">
+            <form method="POST" class="registration" id="appointment-form">
+                <h2>Register To Be Part Of APU's Photography Team!</h2>
+                <div class="form-group-1">
+                    <input type="text" name="student_ID" id="student_id" placeholder="&ensp;Student ID" required>
+                    <input type="text" name="name" id="name" placeholder="&ensp;Your Name" required>
+                    <input type="password" name="password" id="password" placeholder="&ensp;Password" required>
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="&ensp;Confirm Password" required>
+                    <div id="date">Insert Your Birthday</div>
+                    <input type="date" name="date" id="date" placeholder="&ensp;Insert Your Birthday">
+                    <input type="text" name="intake_code" id="intake_code" placeholder="&ensp;Intake Code" required>
+                    <input type="email" name="email" id="email" placeholder="&ensp;Email" required/>
+                    <input type="number" name="phone_number" id="phone_number" placeholder="&ensp;Phone Number" required>
+                    <div class="select-list">
+                        <select name="course_type" id="course_type">
+                            <option selected value="">Type of camera(s) you own</option>
+                            <option value="">Smartphone</option>
+                            <option value="">DSLR</option>
+                            <option value="t">Compact</option>
+                            <option value="">Action/Adventure</option>
+                            <option value="">Others</option>
+                        </select>
+                    </div>
+                    <input type="text" name="cameras" id="cameras" placeholder="&ensp;If others, please state the type of camera">
+
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="../Terms and Conditions/termsandconditions.html" class="term-service" target="_blank">Terms and Conditions</a></label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="newsletter" id="newsletter" class="newsletter" />
+                    <label for="newsletter" class="newsletter"><span><span></span></span>I would like to sign up for the newsletters</label>
+                    <a href="../Registration (After)/Joined.html"><input type="button" name="submit" id="submit" class="submit" value="Submit" /></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <div align="right" class="credit credittext">
+        <i class="fas fa-user"></i>&ensp;Photographed By: <b>Mervin Lim</b>
+        <br>
+        <a href="https://www.google.com/search?q=aspen+colorado&oq=Aspen+&aqs=chrome.2.69i57j0l5.5711j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><i class="fas fa-globe-americas"></i>&ensp;<b>Colorado, US</b></a>
+      </div>
+    </footer>
+
+</body>
+
+  <!-- JS -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+</html>
