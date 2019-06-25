@@ -1,0 +1,943 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: 200vh;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+                    /* NAV BAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 10 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  text-align: center;
+  z-index: 1;
+}
+nav.black{
+  background: rgba(0, 0, 0, 0.8);
+  height: 70px;
+  padding: 1px 50px;
+  z-index: 1;
+}
+nav ul {
+
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  line-height: 30px;
+  color: white;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  display: inline-block;
+}
+                    /* LOGIN BUTTON */
+.login {
+  float: right;
+  margin-right: 35px;
+  margin-top: 7px;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 6px;
+}
+a.login::before,
+a.login::after,
+span.loginLine::before,
+span.loginLine::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: black;
+  transition: 0.4s;
+  z-index -1;
+}
+a.login::before {
+  top: -5px;
+  left: -10px;
+}
+a.login::after {
+  top: -5px;
+  right: -5px;
+}
+span.loginLine::before {
+  bottom: -5px;
+  left: -10px;
+}
+span.loginLine::after {
+  bottom: -5px;
+  right: -5px;
+}
+a.login:hover::before,
+a.login:hover::after,
+a.login:hover span.loginLine::before,
+a.login:hover span.loginLine::after {
+  height: calc( 15px * 2 );
+}
+.signIn:hover {
+  color: #979ca3;
+}
+
+.line::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width .4s;
+}
+.line:hover::after {
+  width: 100%;
+  transition: width .4s;
+
+}
+                    /* FIRSTMENU */
+.firstMenu {
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  top: 40%;
+  text-align: right;
+  margin-right: 25px;
+  cursor: pointer;
+  display: block;
+}
+.mainMenu {
+  list-style-type: none;
+}
+.firstMenu li a {
+  line-height: 25px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 5px #ff0800;
+
+}
+.firstMenu span.buttonMenu {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .4em;
+  vertical-align: middle;
+  line-height: 12px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0;
+  text-decoration: none;
+}
+.firstMenu .circle-o {
+  line-height: 40px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #7b7e82;
+  background-color: #7b7e82;
+}
+.circle-o:hover {
+  transform: scale(0.5,0.5);
+  transition: .4s;
+  border: 1px solid #ccced1;
+  background-color: #fff;
+}
+.firstMenu span.buttonMenu:hover{
+  opacity: 1;
+  transition: 1s;
+}
+
+section.sec1 {
+  width: 100%;
+  height: 100vh;
+  background:  linear-gradient(rgba(0,0,0, 1),rgba(0,0,0, 0.2)),url(background3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.sec1 .students {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  font-family: 'Lobster', cursive;
+  background: rgba(244,100,97, 0.5);
+}
+.arrow {
+  position: relative;
+  float: right;
+  top: 50%;
+  margin-right: 80px;
+}
+.btn {
+  display: inline-block;
+  font-size: 40px;
+}
+.btn i {
+  color: white;
+  margin: 0px;
+}
+.btn:hover i {
+  transform: scale( 0.8 , 0.8 );
+  transition: 0.5s ease;
+  color: red;
+}
+
+                    /* Section 2 Mervin Lim Zi Liang */
+
+section.sec2 {
+  background:  linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.2)),url(background13.jpg);
+  width: 100%;
+  height: 200vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.holder {
+  width: 1280px;
+  background: ;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.holder .box {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+
+}
+.holder .box .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+ transition: transform 2s;
+}
+.holder .box:hover .imgBox img {
+  transform: scale(1.2);
+}
+section.sec2 .first {
+  position: relative;
+  color: white;
+  margin-right: px;
+  float: right;
+  font-size: 50px;
+  background: rgba(255, 0, 0, 0.5);
+  width: 50%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 15px;
+}
+section.sec2 .Info {
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  left: 50%;
+  top: -550px;
+}
+section.sec2 .HR {
+  width: 90%;
+  height: 0px;
+}
+
+.holder .box2 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: -100px;
+  top: 50px;
+}
+.holder .box2 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box2 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+ transition: transform 2s;
+}
+.holder .box2:hover .imgBox img {
+  transform: scale(0.9);
+}
+
+.holder .box3 {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 8px;
+  top: 50px;
+}
+.holder .box3 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box3 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+ transition: transform 2s;
+}
+.holder .box3:hover .imgBox img {
+  transform: scale(0.9);
+}
+
+.holder .box4 {
+  position: relative;
+  width: 250px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: -480px;
+  top: 325px;
+}
+.holder .box4 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box4 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+ transition: transform 2s;
+}
+.holder .box4:hover .imgBox img {
+  transform: scale(0.9);
+}
+
+.holder .box5 {
+  position: relative;
+  width: 320px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 45%;
+  top: -177px;
+}
+.holder .box5 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box5 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+ transition: transform 0.7s;
+}
+.holder .box5:hover .imgBox img {
+  transform: scale(0.9);
+}
+
+.holder .box6 {
+  position: relative;
+  width: 570px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 45.5%;
+  top: -177px;
+}
+.holder .box6 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box6 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box6:hover .imgBox img {
+  transform: scale(0.9);
+}
+                    /* Section 3 Ryan Yap Mun Fai */
+section.sec3 {
+  background:  linear-gradient(rgba(0,0,0, 1),rgba(0,0,0, 0.2)),url(background5.jpg);
+  width: 100%;
+  height: 200vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.sec3 .ryan {
+  position: relative;
+  color: white;
+  margin-right: px;
+  float: right;
+  font-size: 50px;
+  background: rgba(255, 0, 0, 0.5);
+  width: 50%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 15px;
+}
+
+section.sec3 .ryanInfo {
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  left: 50%;
+  top: -550px;
+}
+section.sec3 .ryanHR {
+  width: 90%;
+  height: 0px;
+}
+
+.holder .box2-2 {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: -100px;
+  top: 50px;
+
+}
+.holder .box2-2 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box2-2 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box2-2:hover .imgBox img {
+  transform: scale(0.9);
+}
+
+.holder .box3-2 {
+  position: relative;
+  width: 480px;
+  height: 320px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: -42%;
+  top: 460px;
+
+}
+.holder .box3-2 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box3-2 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box3-2:hover .imgBox img {
+  transform: scale(0.9);
+}
+.holder .box4-2 {
+  position: relative;
+  width: 550px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 40%;
+  top: -350px;
+
+}
+.holder .box4-2 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box4-2 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box4-2:hover .imgBox img {
+  transform: scale(0.9);
+}
+
+.holder .box5-2 {
+  position: relative;
+  width: 350px;
+  height: 480px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 41%;
+  top: -350px;
+}
+.holder .box5-2 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box5-2 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box5-2:hover .imgBox img {
+  transform: scale(0.9);
+}
+
+                    /* Section 4 Chua Qin Peng */
+
+section.sec4 {
+  background:  linear-gradient(rgba(0,0,0, 1),rgba(0,0,0, 0.2)),url(random.jpg);
+  width: 100%;
+  height: 200vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.sec4 .cqp {
+  position: relative;
+  color: white;
+  margin-right: px;
+  float: right;
+  font-size: 50px;
+  background: rgba(255, 0, 0, 0.5);
+  width: 50%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 15px;
+}
+
+section.sec4 .cqpInfo {
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  left: 50%;
+  top: -550px;
+}
+section.sec4 .cqpHR {
+  width: 90%;
+  height: 0px;
+}
+
+
+.holder .box2-3 {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: -100px;
+  top: 50px;
+
+}
+.holder .box2-3 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box2-3 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box2-3:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.holder .box3-3 {
+  position: relative;
+  width: 300px;
+  height: 375px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 0.5%;
+  top: 50px;
+}
+.holder .box3-3 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box3-3 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box3-3:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.holder .box4-3 {
+  position: relative;
+  width: 248px;
+  height: 375px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 1%;
+  top: 50px;
+}
+.holder .box4-3 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box4-3 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box4-3:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.holder .box5-3 {
+  position: relative;
+  width: 380px;
+  height: 250px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: -42.3%;
+  top: 430px;
+}
+.holder .box5-3 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box5-3 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box5-3:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.holder .box6-3 {
+  position: relative;
+  width: 380px;
+  height: 250px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 58%;
+  top: -70px;
+}
+.holder .box6-3 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box6-3 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box6-3:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.holder .box7-3 {
+  position: relative;
+  width: 248px;
+  height: 375px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 42%;
+  top: -450px;
+}
+.holder .box7-3 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box7-3 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box7-3:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+
+                    /* Section 4 Chong Hao Yi */
+
+section.sec5 {
+  background:  linear-gradient(rgba(0,0,0, 1),rgba(0,0,0, 0.2)),url(background22.jpg);
+  width: 100%;
+  height: 210vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.sec5 .chy {
+  position: relative;
+  color: white;
+  margin-right: px;
+  float: right;
+  font-size: 50px;
+  background: rgba(255, 0, 0, 0.5);
+  width: 50%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 15px;
+}
+
+section.sec5 .chyInfo {
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  left: 50%;
+  top: -550px;
+}
+section.sec5 .chyHR {
+  position: relative;
+  width: 90%;
+  height: 0px;
+  top: 100px;
+}
+
+
+.holder .box2-4 {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: -100px;
+  top: 150px;
+
+}
+.holder .box2-4 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box2-4 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box2-4:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.holder .box3-4 {
+  position: relative;
+  width: 540px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 0.5%;
+  top: 150px;
+}
+.holder .box3-4 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box3-4 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box3-4:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.holder .box4-4 {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 1%;
+  top: 150px;
+}
+.holder .box4-4 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box4-4 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box4-4:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.holder .box5-4 {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  left: 70.5%;
+  top: -110px;
+}
+.holder .box5-4 .imgBox {
+  position: relative;
+  overflow: hidden;
+
+}
+.holder .box5-4 .imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 1s;
+}
+.holder .box5-4:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    /* FOOTER */
+.container {
+background-color: #fff8c6;
+width: 100%;
+height: 40vh;
+margin-top: -15px;
+box-sizing: border-box;
+text-align: center;
+}
+
+.footerlogo a {
+text-decoration: none;
+text-transform: uppercase;
+font-family: 'Dancing Script', cursive;
+font-size: 36px;
+color: black;
+position: absolute;
+left: 5%;
+margin-top: 60px;
+}
+
+.footerMenu p {
+text-decoration: none;
+text-transform: uppercase;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 25px;
+position: absolute;
+left: 35%;
+margin-top: 35px;
+}
+
+.footerMenu ul li {
+list-style: none;
+}
+
+.footerMenu ul li a {
+text-decoration: none;
+color: black;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 18px;
+position: relative;
+left: -15%;
+top: 100px;
+cursor: pointer;
+}
+
+.footerMenu ul li a:hover {
+color: #a38000;
+}
