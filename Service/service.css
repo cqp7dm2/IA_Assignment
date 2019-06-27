@@ -1,0 +1,422 @@
+body{
+    margin:0;
+    padding:0;
+    display:block;
+    min-height: 100vh;
+    font-family: poppins,sans-serif;
+
+}
+h1{
+    margin-top: 175px;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.box1 .box2 .box3 h2{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 35px;
+}
+.container{
+    width:1200px;
+    min-height:400px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items:center;
+    margin-top: 300px;
+    margin-left: 140px;
+
+}
+
+.container .box1 , .box2 , .box3 {
+    position:relative;
+    margin-left: 35px;
+    width: 360px;
+    height: 380px;
+    color: white;
+    overflow: hidden;
+    transition:0.5s;
+    z-index:2;
+    box-sizing :border-box;
+    border:2px solid white;
+    padding:30px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.2);
+    color: white;
+
+}
+
+.container .box1 , .box2 , .box3:hover{
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.container .bg{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    opacity:0;
+    background:#000;
+    transition: 1s;
+    pointer-events: none;
+    width:100%;
+    height:100vh;
+
+}
+
+.container .box1:hover {
+    opacity:1;
+    color:black;
+    background:white;
+}
+.container .box2:hover {
+    opacity:1;
+    color:black;
+    background:white;
+}
+.container .box3:hover {
+    opacity:1;
+    color:black;
+    background:white;
+}
+
+.container .box1:hover ~.bg{
+    opacity:1;
+    color:black;
+    background: url(camera.jpg);
+    background-position: center;
+
+}
+.container .box2:hover ~.bg {
+    opacity:1;
+    color:black;
+    background:url(camera1.jpg);
+    background-position:center;
+
+}
+
+.container .box3:hover ~.bg {
+    opacity:1;
+    color:black;
+    background:url(man.jpg);
+    background-position:right ;
+}
+
+.bg1{
+    height:100vh;
+    width: 100%;
+    background-image: url(girl2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+
+
+}
+
+.view{
+    color:white;
+    background-color:black ;
+    width:100%;
+    height:200px;
+    margin:0;
+    display: table;
+}
+
+.view h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.bg2{
+    height:100vh;
+    width: 100%;
+    background-image: url(camerawpp.jpg);
+    background-size: cover;
+    display:table;
+    background-attachment:fixed;
+
+}
+
+
+
+
+/*This is gallery*/
+
+
+.gallery{
+    max-width: 1100px;
+    margin-top: 250PX;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    position: relative;
+    margin: 30px 18px;
+    width:240px;
+    height:298px;
+    background:#fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition:1s;
+    box-shadow:inset 300px 0 50px rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.card:hover{
+    z-index: 1000;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow:inset 20px 0 50px rgba(0, 0, 0, .5);
+  }
+
+  .card .imgbox{
+    position: relative;
+    width:100%;
+    height:100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+
+  }
+  .card:hover .imgbox{
+    transform: rotateY(-135deg);
+  }
+  .card .imgbox .img{
+    position: absolute;;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+  .card .details{
+    font-family: cursive;
+    position: absolute;
+    top: 0;
+    left:0;
+    box-sizing:border-box;
+    padding: 15px;
+  }
+
+.card .details h3{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+
+.curious{
+    color:black;
+    background-color:#b6b7c2 ;
+    width:100%;
+    height:200px;
+    margin:0;
+    display: table;
+}
+
+.curious h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+/*This is price table*/
+.bg3{
+    height:100vh;
+    width: 100%;
+    background-image: url(wallpp.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.box{
+  position: relative;
+  width:480px;
+  height:626px;
+  background: #000;
+  overflow: hidden;
+  margin: 12px;
+}
+
+.box .colour1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  display:flex;
+}
+
+.box .colour1 span {
+  width:25%;
+  height:100%;
+  background:url(price1.jpg);
+  transition:0.5s;
+  background-size: cover;
+}
+
+.box:hover .colour1 span{transform: translateY(-100%);}
+
+.box .colour1 span:nth-child(1)
+{
+  transition-delay: 0s;
+  background-position: 0%;
+}
+
+.box .colour1 span:nth-child(2)
+{
+  transition-delay: 0.1s;
+  background-position: 33.33%;
+}
+
+.box .colour1 span:nth-child(3)
+{
+  transition-delay: 0.2s;
+  background-position: 66.66%;
+}
+
+.box .colour1 span:nth-child(4)
+{
+  transition-delay: 0.3s;
+  background-position: 100%;
+}
+
+.box .colour2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  display:flex;
+}
+
+.box .colour2 span {
+  width:25%;
+  height:100%;
+  background:url(price2.jpg);
+  transition:0.5s;
+  background-size: cover;
+}
+
+.box:hover .colour2 span{transform: translateY(-100%);}
+
+.box .colour2 span:nth-child(1)
+{
+  transition-delay: 0s;
+  background-position: 0%;
+}
+
+.box .colour2 span:nth-child(2)
+{
+  transition-delay: 0.1s;
+  background-position: 33.33%;
+}
+
+.box .colour2 span:nth-child(3)
+{
+  transition-delay: 0.2s;
+  background-position: 66.66%;
+}
+
+.box .colour2 span:nth-child(4)
+{
+  transition-delay: 0.3s;
+  background-position: 100%;
+}
+.box .colour3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  display:flex;
+}
+
+.box .colour3 span {
+  width:25%;
+  height:100%;
+  background:url(price3.jpg);
+  transition:0.5s;
+  background-size: cover;
+}
+
+.box:hover .colour3 span{transform: translateY(-100%);}
+
+.box .colour3 span:nth-child(1)
+{
+  transition-delay: 0s;
+  background-position: 0%;
+}
+
+.box .colour3 span:nth-child(2)
+{
+  transition-delay: 0.1s;
+  background-position: 33.33%;
+}
+
+.box .colour3 span:nth-child(3)
+{
+  transition-delay: 0.2s;
+  background-position: 66.66%;
+}
+
+.box .colour3 span:nth-child(4)
+{
+  transition-delay: 0.3s;
+  background-position: 100%;
+}
+
+
+.box .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  justify-content:center;
+  align-items:center;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  text-align:left;
+  transition:0.5s;
+  transform: translateY(100%);
+}
+
+.box:hover .content{
+  transition-delay: 0.3s;
+  transform:translateY(0);
+}
+
+.box .content h2{
+  color:#fff;
+  font-size: 25px;
+  font-family: sans-serif;
+
+}
+.box .content p{
+  color:#fff;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.box .content li{
+  list-style-type:disc;
+  color:#fff;
+  font-size: 14px;
+  font-family: sans-serif;
+}
