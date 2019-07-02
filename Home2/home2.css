@@ -498,35 +498,6 @@ section.sec4 button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     /* FOOTER */
 .container {
   background-color: #fff8c6;
@@ -597,7 +568,7 @@ section.sec4 button:hover {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
   left: 20px;
-
+  top: 20px
 }
 .contactUs ul {
   list-style: none;
@@ -608,7 +579,7 @@ section.sec4 button:hover {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
   position: relative;
-  top: -10px;
+  top: 10px;
 }
 .contactUs ul li a {
   text-decoration: none;

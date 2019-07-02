@@ -4,6 +4,7 @@
   <link rel ="stylesheet" type = "text/css" href = "ia.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -16,14 +17,14 @@
       <div class = "logo">
       </div>
       <div id = "nav_bar">
-        <a href = "#" class = "login"><span class = "loginLine"><span><i class="fas fa-sign-in-alt signIn"></i><span class = "signIn">Login</a>
+        <a href = "../Login Page (Latest)/login.html" class = "login"><span class = "loginLine"><span><i class="fas fa-sign-in-alt signIn"></i><span class = "signIn">Login</a>
     <ul>
       <li><a href = "#home" class = "line">Home</a></li>
-      <li><a href = "#" class = "line">Student's Portfolio</a></li>
-      <li><a href = "#" class = "line">Student's Offer</a></li>
+      <li><a href = "../Student's Port Folio/student'sportfolio.html" class = "line">Student's Portfolio</a></li>
+      <li><a href = "../Student_s offer/student_sOffer.html" class = "line">Student's Offer</a></li>
       <li><a href = "#" class = "line">Services</a></li>
-      <li><a href = "#" class = "line">Join Us</a></li>
-      <li><a href = "#" class = "line">Auditor</a></li>
+      <li><a href = "../Registration Form/registration.html" class = "line">Join Us</a></li>
+      <li><a href = "#" class = "line">Developer</a></li>
 </ul>
 </nav>
 
@@ -50,6 +51,7 @@
 
 
 <h1 class = "animated pulse slow infinite">
+  <div data-aos="fade-up">
   “Taking an image, </br>
    freezing a moment,</br>
    reveals how rich reality truly is.”
@@ -80,6 +82,8 @@
 
   </section>
   <section class = "sec3" id = "crew">
+    <div data-aos="fade-up">
+
     <div class = "holder">
       <div class = "box">
       <div class = "imgBox">
@@ -146,11 +150,10 @@
     <p>Menu</p>
     <ul>
       <li><a href = "#home">Home</a></li>
-      <li><a href = "#">Student's Portfolio</a></li>
-      <li><a href = "#">Student's Offer</a></li>
+      <li><a href = "../Student's Port Folio/student'sportfolio.html">Student's Portfolio</a></li>
+      <li><a href = "../Student_s offer/student_sOffer.html">Student's Offer</a></li>
       <li><a href = "#">Services</a></li>
-      <li><a href = "#">Join Us</a></li>
-      <li><a href = "#">Auditor</a></li>
+      <li><a href = "#">Developer</a></li>
   </div>
 
 <div class = "contactUs">
@@ -179,6 +182,7 @@
 </div>
 </footer>
             <!-- Jquery nav bar -->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src = "countdown.js"></script>
 <script type="text/javascript">
   $(window).on('scroll', function(){
@@ -201,6 +205,13 @@
         +'<div><span>%S</span><span>Sec</span></div>'
       ))
   })
+
+
+
+    AOS.init({
+      duration: 1500,
+    });
+
 </script>
 
 
