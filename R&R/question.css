@@ -43,6 +43,70 @@ font-size: 13px;
 display: inline-block;
 }
 
+.login {
+  float: right;
+  margin-right: 35px;
+  margin-top: 7px;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 6px;
+}
+a.login::before,
+a.login::after,
+span.loginLine::before,
+span.loginLine::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: black;
+  transition: 0.4s;
+  z-index -1;
+}
+a.login::before {
+  top: -5px;
+  left: -10px;
+}
+a.login::after {
+  top: -5px;
+  right: -5px;
+}
+span.loginLine::before {
+  bottom: -5px;
+  left: -10px;
+}
+span.loginLine::after {
+  bottom: -5px;
+  right: -5px;
+}
+a.login:hover::before,
+a.login:hover::after,
+a.login:hover span.loginLine::before,
+a.login:hover span.loginLine::after {
+  height: calc( 15px * 2 );
+}
+.signIn:hover {
+  color: #979ca3;
+}
+
+.line::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width .4s;
+}
+.line:hover::after {
+  width: 100%;
+  transition: width .4s;
+
+}
+
 /*This is scroll down effect*/
 .scroll{
   position:absolute;
