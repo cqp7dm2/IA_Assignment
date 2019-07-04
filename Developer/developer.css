@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+
+}
+body {
+  margin: 0;
+  padding: 0;
+
+}
+                    /* NAV BAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 10 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  text-align: center;
+  z-index: 1;
+}
+nav.black{
+ background: rgba(0, 0, 0, 0.8);
+ height: 70px;
+ padding: 1px 50px;
+ z-index: 1;
+}
+nav ul {
+
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  line-height: 30px;
+  color: white;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  display: inline-block;
+}
+                    /* LOGIN BUTTON */
+.login {
+  float: right;
+  margin-right: 35px;
+  margin-top: 7px;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 6px;
+}
+a.login::before,
+a.login::after,
+span.loginLine::before,
+span.loginLine::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: black;
+  transition: 0.4s;
+  z-index -1;
+}
+a.login::before {
+  top: -5px;
+  left: -10px;
+}
+a.login::after {
+  top: -5px;
+  right: -5px;
+}
+span.loginLine::before {
+  bottom: -5px;
+  left: -10px;
+}
+span.loginLine::after {
+  bottom: -5px;
+  right: -5px;
+}
+a.login:hover::before,
+a.login:hover::after,
+a.login:hover span.loginLine::before,
+a.login:hover span.loginLine::after {
+  height: calc( 15px * 2 );
+}
+.signIn:hover {
+  color: #979ca3;
+}
+
+.line::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width .4s;
+}
+.line:hover::after {
+  width: 100%;
+  transition: width .4s;
+
+}
+
+section.sec1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.2)),url(background1.jpg);
+  background-position: fixed;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.sec1 .holder {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background: linear-gradient(rgba(0,0,0, 0.5),rgba(255,255,255, 0.3));
+  box-sizing: border-box;
+  border-radius: 10px;
+  left: 90px;
+  top: 100px;
+  display: inline-block;
+  margin-right: 50px;
+}
+section.sec1 .box img {
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+section.sec1 .holder .image img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  left: 25px;
+  top: 25px;
+  transition: 1s;
+}
+hr {
+  width: 60%;
+}
+section.sec1 .name {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Stylish', sans-serif;
+}
+section.sec1 .age {
+  text-align: center;
+  color: white;
+  font-family: 'Stylish', sans-serif;
+  margin-top: -20px;
+}
+section.sec1 .info {
+  text-align: center;
+  color: white;
+  font-family: 'Stylish', sans-serif;
+  margin-top: -20px;
+}
+section.sec1 .information {
+  position: relative;
+  margin-top: 100px;
+}
+section.sec1 .holder .image img:hover {
+  transform: scale(1.1,1.1);
+}
