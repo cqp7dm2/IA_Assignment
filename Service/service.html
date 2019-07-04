@@ -10,6 +10,20 @@
   </head>
 
   <body>
+    <nav>
+        <div class = "logo">
+        </div>
+        <div id = "nav_bar">
+          <a href = "#" class = "login"><span class = "loginLine"><span><i class="far fa-user signIn"></i><span class = "signIn">Mervin</a>
+      <ul>
+        <li><a href = "#home" class = "line">Home</a></li>
+        <li><a href = "../Student's Port Folio/student'sportfolio.html" class = "line">Student's Portfolio</a></li>
+        <li><a href = "../Student_s offer/student_sOffer.html" class = "line">Student's Offer</a></li>
+        <li><a href = "../Service/service.html" class = "line">Services</a></li>
+        <li><a href = "../Developer/developer.html" class = "line">Developer</a></li>
+  </ul>
+  </nav>
+
     <!--This is Service Provide-->
       <div class="bg1">
               <h1>The Service We Provide..... </h1>
@@ -260,5 +274,17 @@
 
 
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src = "countdown.js"></script>
+  <script type="text/javascript">
+    $(window).on('scroll', function(){
+      if($(window).scrollTop()){
+        $('nav').addClass('black');
+      }
+      else{
+        $('nav').removeClass('black')
+      }
+    })
+
 
 </html>
