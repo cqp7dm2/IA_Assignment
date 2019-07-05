@@ -1,0 +1,361 @@
+html
+{
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body
+{
+  margin:0;
+  padding:0;
+}
+
+ul
+{
+  margin:0;
+  margin-right: 10%;
+}
+
+li
+{
+  display: inline;
+  padding: .5rem 1rem;
+  font-weight: 700;
+  position: relative;
+}
+
+a
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover
+{
+  opacity:.75!important;
+}
+
+p
+{
+  margin-top:0;
+  margin-bottom:30px;
+  font-weight: 300;
+  font-size: 28px;
+  margin-top: 20%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav
+{
+  background: linear-gradient(120deg,#7f70f5,#0ea0ff);
+  color: #fff;
+  margin: 0;
+  height: 93px;
+  font-family: "Raleway"
+}
+
+.name
+{
+  float: left;
+  font-size: 25px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.sec1
+{
+  background: url("images/background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:88.75vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.container
+{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: "Raleway";
+  font-size: 20px;
+}
+
+.aboutme
+{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -5%;
+}
+
+.row
+{
+  display: flex;
+  margin-left: 5%;
+}
+
+.mepng
+{
+  height: 430px;
+  margin-left: 20%;
+}
+
+.logo
+{
+  height: 380px;
+}
+
+.test
+{
+  height: 1000px;
+}
+
+.sec2
+{
+  background: url("images/background2.jpg");
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.me2png
+{
+  height: 430px;
+  margin-left: 10%;
+  margin-top: 25px;
+}
+
+.rubiks
+{
+  height: 270px;
+  margin-left: 25%;
+  margin-top: 75px;
+
+}
+
+.introtitle
+{
+  align: center;
+  font-family: "Raleway";
+  margin-top: 4%;
+  font-size: 30px;
+}
+
+.intro
+{
+  width: 650px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-left: -10%;
+}
+
+.sec3
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+  url("images/background3.jpg");
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.educationtitle
+{
+  align: center;
+  font-family: "Raleway";
+  margin-top: 4%;
+  font-size: 30px;
+  color: #FFF;
+}
+
+.container2
+{
+  font-family: "Raleway";
+  font-size: 20px;
+  color: #FFF;
+}
+
+.edu
+{
+  width: 650px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.sec3images
+{
+  padding: 20px;
+}
+
+.sec4
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+  url("images/background4.jpg");
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.rubiksdesc
+{
+  width: 650px;
+  margin-left: 17%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  line-height: 30px;
+}
+
+.rubiksimage
+{
+  height: 270px;
+  float: right;
+  margin-right: 15%;
+}
+
+.gameimage
+{
+  height: 270px;
+  float: left;
+  margin-left: 15%;
+}
+
+.gamedesc
+{
+  width: 650px;
+  line-height: 30px;
+  float: right;
+  margin-right: 15%;
+  margin-top: 0.5%;
+}
+
+.musicimage
+{
+  height: 270px;
+  float: right;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+.musicdesc
+{
+  width: 650px;
+  margin-left: 17%;
+  margin-top: -19%;
+  margin-bottom: 5%;
+  line-height: 30px;
+  float: left;
+}
+
+.sec5
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+  url("images/background5.jpg");
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.contactstitle
+{
+  align: center;
+  font-family: "Raleway";
+  margin-top: 4%;
+  font-size: 30px;
+  color: #FFF;
+}
+
+.phone
+{
+  height: 130px;
+  margin-left: 30%;
+  float: left;
+  margin-top: 3%;
+}
+
+.phonenumber
+{
+  color: #FFF;
+  font-size: 45px;
+  font-family: "Raleway";
+  margin-top: 6%;
+  margin-left: 40%;
+}
+
+.email
+{
+  height: 130px;
+  float: left;
+  margin-top: 8%;
+  margin-left: -9.5%;
+}
+
+.emailaddress
+{
+  color: #FFF;
+  font-size: 45px;
+  font-family: "Raleway";
+  margin-top: 10%;
+  margin-left: 40%;
+}
+
+.contactdesc
+{
+  width: 650px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #FFF;
+  margin-top: 10%;
+  margin-left: 27%;
+  font-family: "Raleway";
+  font-size: 19px;
+}
+
+@media (min-width:1200px)
+{
+  .container {
+    max-width:1140px;
+  }
+}
+
+@media (min-width:992px)
+{
+  .container {
+    max-width:960px;
+  }
+}
+
+@media (min-width:768px)
+{
+  .container {
+    max-width:720px;
+  }
+}
+
+@media (min-width:576px) {
+  .container {
+    max-width:540px;
+  }
+}
